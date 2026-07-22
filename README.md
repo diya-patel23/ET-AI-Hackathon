@@ -80,23 +80,39 @@ Pages: `/` dashboard, `/copilot` RAG chat, `/documents` upload + browse,
 `/graph` knowledge graph explorer (search "Pump P204"), `/agents` Root
 Cause / Maintenance / Compliance.
 
-## 4. Turning on the LLM 
+## 4. Turning on the Local LLM
 
-Without an API key, the app is fully functional except that copilot answers
-and agent narratives show a `[LLM not configured]` placeholder instead of a
-synthesized response — everything else (search, the causal chain's
-structure, risk scores, compliance pass/fail) still works because those are
-computed by real logic, not the LLM.
+The application uses **Ollama** to run the language model locally instead of relying on a hosted API or API key. This allows the LLM layer to work without sending industrial documents or data to an external service.
 
-To turn it on:
+Without Ollama running, the app is still partially functional. Document ingestion, search, the knowledge graph, causal-chain structure, risk scores, and compliance pass/fail checks continue to work. However, copilot answers and agent narratives will show a `[LLM not available]` placeholder instead of a generated response.
+
+To turn on the local LLM:
+
+1. Install Ollama from the official website.
+2. Pull the required model:
 
 ```bash
-# backend/.env
-LLAMA_API_KEY=sk-ant-...
+ollama pull llama3.2
 ```
 
-Restart the backend. Re-run `python -m seed.run_seed` if you want the LLM
-entity-enrichment pass applied retroactively to the seeded documents too.
+3. Start Ollama if it is not already running:
+
+```bash
+ollama serve
+```
+
+4. Make sure the backend is configured to use the local Ollama model:
+
+```env
+OLLAMA_MODEL=llama3.2
+OLLAMA_BASE_URL=http://localhost:11434
+```
+
+The backend communicates with Ollama through its local HTTP API. No API key is required.
+
+After starting Ollama, restart the backend.
+
+if you want the LLM entity-enrichment pass to be applied retroactively to the seeded documents as well.
 
 ## 5. Uploading your own documents
 
