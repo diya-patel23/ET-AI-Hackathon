@@ -29,11 +29,6 @@ industrial-knowledge-platform/
   tesseract` (macOS). Everything else works fine without it — OCR just
   becomes a no-op for image uploads.
 
-You do **not** need Postgres, Neo4j, or Docker. See the architecture doc
-(`industrial-knowledge-platform-architecture.md`, shared earlier) for why
-those were intentionally swapped for SQLite/Chroma/graph-as-tables to fit a
-one-week build, and what upgrading to them later would look like.
-
 ---
 
 ## 2. Backend setup
@@ -85,7 +80,7 @@ Pages: `/` dashboard, `/copilot` RAG chat, `/documents` upload + browse,
 `/graph` knowledge graph explorer (search "Pump P204"), `/agents` Root
 Cause / Maintenance / Compliance.
 
-## 4. Turning on the LLM (recommended before your demo)
+## 4. Turning on the LLM 
 
 Without an API key, the app is fully functional except that copilot answers
 and agent narratives show a `[LLM not configured]` placeholder instead of a
