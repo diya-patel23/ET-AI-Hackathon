@@ -232,6 +232,11 @@ def call_llm_json(system: str, prompt: str, max_tokens: int = 1024) -> dict | li
 
     Returns None on failure or when the LLM isn't configured, so callers
     can fall back to a rule-based path.
+
+    Ollama (and other local models) often wrap their JSON response in markdown
+    fences (```json ... ```) or add a preamble sentence before the JSON.
+    This function extracts the first valid JSON object or array from anywhere
+    in the response, so those stylistic variations don't cause silent failures.
     """
     if not llm_available():
         return None
@@ -240,13 +245,30 @@ def call_llm_json(system: str, prompt: str, max_tokens: int = 1024) -> dict | li
         prompt,
         max_tokens=max_tokens,
     )
-    cleaned = raw.strip()
-    if cleaned.startswith("```"):
-        cleaned = cleaned.strip("`")
-        if cleaned.startswith("json"):
-            cleaned = cleaned[4:]
+
+    # Strategy 1: try the whole response first (fast path for well-behaved models)
     try:
-        return json.loads(cleaned)
-    except Exception as e:
-        logger.warning("Failed to parse LLM JSON output: %s | raw=%s", e, raw[:300])
-        return None
+        return json.loads(raw.strip())
+    except Exception:
+        pass
+
+    # Strategy 2: strip a single ```json ... ``` fence block
+    fence_match = re.search(r"```(?:json)?\s*([\s\S]*?)```", raw)
+    if fence_match:
+        try:
+            return json.loads(fence_match.group(1).strip())
+        except Exception:
+            pass
+
+    # Strategy 3: find the first { ... } or [ ... ] block anywhere in the text.
+    # This catches responses where the model adds a preamble sentence before JSON.
+    obj_match = re.search(r"(\{[\s\S]*\}|\[[\s\S]*\])", raw)
+    if obj_match:
+        try:
+            return json.loads(obj_match.group(1))
+        except Exception:
+            pass
+
+    logger.warning("Failed to parse LLM JSON output — raw response: %s", raw[:400])
+    return None
+

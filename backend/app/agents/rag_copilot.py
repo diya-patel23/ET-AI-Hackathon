@@ -1,5 +1,4 @@
 import math
-import re
 from sqlalchemy.orm import Session
 
 from app.vectorstore import chroma_client
@@ -9,26 +8,14 @@ from app.ingestion.entity_extractor import extract_from_text
 
 SYSTEM_PROMPT = (
     "You are an industrial operations copilot. Answer the engineer's question using ONLY the "
-    "provided document excerpts. Rules you must follow:\n"
-    "1. Use ONLY facts explicitly stated in the excerpts — do not infer, speculate, or guess.\n"
-    "2. If the excerpts do not contain the answer, say exactly: "
-    "'The available documents do not contain information about [topic]. "
-    "Try uploading relevant records for that equipment.' — then STOP. Do not suggest possible causes.\n"
-    "3. Reference specific equipment IDs, dates, and source documents in your answer.\n"
-    "4. Keep the answer concise — a few sentences to a short paragraph."
+    "provided document excerpts. Be precise and factual. If the excerpts don't fully answer the "
+    "question, say what's missing. Reference specific equipment, dates, and documents where relevant. "
+    "Keep the answer focused — a few sentences to a short paragraph, not an essay."
 )
-
-# Equipment ID pattern — e.g. P204, C602, T710, M410, B501, V220
-_EQUIP_RE = re.compile(r'\b([A-Z]\d{3,4})\b')
-
-
-def _extract_equipment_ids(text: str) -> set[str]:
-    """Pull equipment IDs like P204, C602 from a query string."""
-    return set(_EQUIP_RE.findall(text.upper()))
 
 
 def answer_query(db: Session, query: str, history: list[dict] | None = None) -> dict:
-    results = chroma_client.query(query, n_results=10)
+    results = chroma_client.query(query, n_results=5)
 
     docs = results.get("documents", [[]])[0]
     metadatas = results.get("metadatas", [[]])[0]
@@ -42,24 +29,6 @@ def answer_query(db: Session, query: str, history: list[dict] | None = None) -> 
             "confidence": 0.0,
             "related_entities": [],
         }
-
-    # Re-rank: chunks whose filename/text mentions a queried equipment ID float to top.
-    # This ensures "Why did P204 fail?" always surfaces P204 documents even when
-    # generic pump-related chunks score slightly higher by vector distance alone.
-    queried_equip = _extract_equipment_ids(query)
-    if queried_equip:
-        def _rank_key(item):
-            _, text, meta, dist = item
-            fname = (meta.get("filename") or "").upper()
-            # Boost: -1 if any queried equipment ID appears in filename or text
-            boost = -1 if any(eq in fname or eq in text.upper() for eq in queried_equip) else 0
-            return (boost, dist)
-        ranked = sorted(zip(range(len(docs)), docs, metadatas, distances), key=_rank_key)
-        _, docs, metadatas, distances = zip(*ranked) if ranked else ([], [], [], [])
-        docs, metadatas, distances = list(docs), list(metadatas), list(distances)
-
-    # Use top 6 chunks so the prompt stays focused
-    docs, metadatas, distances = docs[:6], metadatas[:6], distances[:6]
 
     context_blocks = []
     citations = []

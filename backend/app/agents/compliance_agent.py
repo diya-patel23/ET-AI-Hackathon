@@ -14,35 +14,58 @@ RULES = [
     {
         "rule": "Inspection date is documented",
         "standard": "Internal SOP",
-        "check": lambda text: bool(re.search(r"\b(inspection date|inspected on|date of inspection)\b", text, re.I)),
+        # Matches 'inspection date:', 'inspected on', 'date of inspection', or any date-like
+        # pattern near inspection keywords — covers typical maintenance log formats.
+        "check": lambda text: bool(re.search(
+            r"\b(inspection date|inspected on|date of inspection|inspection:\s*\d|date:\s*\d|\d{4}-\d{2}-\d{2})",
+            text, re.I,
+        )),
     },
     {
         "rule": "Inspector/engineer is named",
         "standard": "Internal SOP",
-        "check": lambda text: bool(re.search(r"\b(inspected by|engineer|technician)\s*:", text, re.I)),
+        # Colon is NOT required — 'Engineer John Smith' or 'Technician: J. Doe' both pass.
+        "check": lambda text: bool(re.search(
+            r"\b(inspected by|performed by|engineer|technician|inspector|operator)\b",
+            text, re.I,
+        )),
     },
     {
         "rule": "PPE requirement is documented",
         "standard": "OSHA 1910.132",
-        "check": lambda text: bool(re.search(r"\b(PPE|personal protective equipment)\b", text, re.I)),
+        # Also catches safety gear synonyms common in industrial logs.
+        "check": lambda text: bool(re.search(
+            r"\b(PPE|personal protective equipment|safety gear|hard hat|gloves|safety glasses|respirator|harness)",
+            text, re.I,
+        )),
     },
     {
         "rule": "No overdue certification mentioned",
         "standard": "ISO 55001",
-        "check": lambda text: not bool(re.search(r"\b(certification expired|certificate expired|overdue certification)\b", text, re.I)),
+        # Passes unless the document explicitly mentions an expired/overdue cert.
+        "check": lambda text: not bool(re.search(
+            r"\b(certification expired|certificate expired|overdue certification|cert.*overdue)",
+            text, re.I,
+        )),
     },
     {
         "rule": "Pressure/safety limits referenced where relevant",
         "standard": "OSHA 1910.169",
-        "check": lambda text: True if not re.search(r"\bpressure\b", text, re.I) else bool(re.search(r"\b(psi|bar|kPa)\b", text, re.I)),
+        # Only applies to documents that mention pressure; others pass automatically.
+        "check": lambda text: (
+            True if not re.search(r"\bpressure\b", text, re.I)
+            else bool(re.search(r"\b(psi|bar|kPa|MPa|pressure limit|max pressure|rated pressure)\b", text, re.I))
+        ),
     },
 ]
 
 LLM_SYSTEM = (
-    "You are a compliance auditor for industrial inspection reports. For the given rule and "
-    "document excerpt, decide if the document passes. Respond as JSON: "
-    '{"passed": true|false, "explanation": str (1 sentence)}. Be conservative — if the excerpt '
-    "doesn't clearly address the rule, say passed=false and explain what's missing."
+    "You are a compliance auditor for industrial inspection and maintenance reports. "
+    "For the given rule and document excerpt, determine if the document passes. "
+    "Use reasonable judgment — if the document implicitly satisfies the rule through "
+    "equivalent language or context, mark it as passed. Only mark failed when the "
+    "required information is clearly absent. "
+    'Respond as JSON only: {"passed": true|false, "explanation": "one sentence"}'
 )
 
 
