@@ -1,0 +1,40 @@
+MAINTENANCE LOG
+Equipment: Conveyor C602
+Plant: Plant 1
+Department: Maintenance
+
+Date: 2024-11-28
+Engineer: Kavita Rao
+Event Type: replacement
+Description: Replaced Belt B21 on Conveyor C602 as preventive maintenance.
+Downtime (hours): 0.0
+
+Date: 2025-03-23
+Engineer: Deepak Nair
+Event Type: replacement
+Description: Replaced Belt B21 on Conveyor C602 as preventive maintenance.
+Downtime (hours): 0.0
+
+Date: 2025-04-17
+Engineer: Deepak Nair
+Event Type: failure
+Description: Conveyor C602 failure. Root symptom chain observed: Belt Slippage -> Belt Wear -> Motor Overload -> Conveyor Stoppage. Failure Code: FC-9835. Part implicated: Belt B21.
+Downtime (hours): 38.7
+
+Date: 2025-07-26
+Engineer: Alan Fernandes
+Event Type: inspection
+Description: Routine inspection of Conveyor C602. Visual and vibration checks within normal range.
+Downtime (hours): 0.0
+
+Date: 2025-11-29
+Engineer: Ravi Shah
+Event Type: replacement
+Description: Replaced Belt B21 on Conveyor C602 as preventive maintenance.
+Downtime (hours): 0.0
+
+Date: 2026-07-20
+Engineer: Alan Fernandes
+Event Type: inspection
+Description: Routine inspection of Conveyor C602. Visual and vibration checks within normal range.
+Downtime (hours): 0.0

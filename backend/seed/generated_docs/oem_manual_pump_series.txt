@@ -1,0 +1,6 @@
+OEM MANUAL EXCERPT — CENTRIFUGAL PUMP SERIES (applies to Pump P204, Pump P118)
+Manufacturer guidance:
+- Bearing wear is the leading cause of unplanned shutdowns in this pump series.
+- Recommended bearing inspection interval: every 900 operating hours.
+- Early symptoms of bearing wear: elevated temperature, then vibration, then oil leakage.
+- If oil leakage is observed, schedule immediate shutdown to avoid impeller damage.

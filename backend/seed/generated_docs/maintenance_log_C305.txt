@@ -1,0 +1,40 @@
+MAINTENANCE LOG
+Equipment: Compressor C305
+Plant: Plant 2
+Department: Maintenance
+
+Date: 2025-01-02
+Engineer: Alan Fernandes
+Event Type: inspection
+Description: Routine inspection of Compressor C305. Visual and vibration checks within normal range.
+Downtime (hours): 0.0
+
+Date: 2025-04-30
+Engineer: Kavita Rao
+Event Type: repair
+Description: Repaired Belt B8 on Compressor C305 after routine inspection flagged wear.
+Downtime (hours): 0.0
+
+Date: 2026-03-03
+Engineer: Priya Menon
+Event Type: repair
+Description: Repaired Filter F60 on Compressor C305 after routine inspection flagged wear.
+Downtime (hours): 0.0
+
+Date: 2026-04-04
+Engineer: Priya Menon
+Event Type: repair
+Description: Repaired Filter F60 on Compressor C305 after routine inspection flagged wear.
+Downtime (hours): 0.0
+
+Date: 2026-05-28
+Engineer: Priya Menon
+Event Type: failure
+Description: Compressor C305 failure. Root symptom chain observed: High Temperature -> Bearing Wear -> Oil Leakage -> Pump Shutdown. Failure Code: FC-2654. Part implicated: Belt B8.
+Downtime (hours): 34.8
+
+Date: 2026-06-06
+Engineer: Alan Fernandes
+Event Type: repair
+Description: Repaired Filter F60 on Compressor C305 after routine inspection flagged wear.
+Downtime (hours): 0.0

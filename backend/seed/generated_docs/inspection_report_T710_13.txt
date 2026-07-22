@@ -1,0 +1,9 @@
+INSPECTION REPORT
+Equipment: Turbine T710
+Plant: Plant 3
+Inspection Date: 2025-08-26
+Inspected by: Alan Fernandes
+Applicable Standard: OSHA 1910.132
+
+Findings: Equipment inspected for wear on Rotor R4. PPE requirement confirmed for personnel in the area.
+All certifications current.

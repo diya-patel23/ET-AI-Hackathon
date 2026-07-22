@@ -1,0 +1,49 @@
+equipment,plant,date,engineer,event_type,description,downtime_hours,failure_code,filename
+Pump P204,Plant 3,2024-11-01,Deepak Nair,inspection,Routine inspection of Pump P204. Visual and vibration checks within normal range.,0.0,,maintenance_log_P204.txt
+Pump P204,Plant 3,2025-02-28,Priya Menon,repair,Repaired Bearing B42 on Pump P204 after routine inspection flagged wear.,0.0,,maintenance_log_P204.txt
+Pump P204,Plant 3,2025-04-27,Priya Menon,inspection,Routine inspection of Pump P204. Visual and vibration checks within normal range.,0.0,,maintenance_log_P204.txt
+Pump P204,Plant 3,2025-09-25,Ravi Shah,inspection,Routine inspection of Pump P204. Visual and vibration checks within normal range.,0.0,,maintenance_log_P204.txt
+Pump P204,Plant 3,2026-02-14,Priya Menon,repair,Repaired Impeller I9 on Pump P204 after routine inspection flagged wear.,0.0,,maintenance_log_P204.txt
+Pump P204,Plant 3,2026-05-05,Ravi Shah,inspection,Routine inspection of Pump P204. Visual and vibration checks within normal range.,0.0,,maintenance_log_P204.txt
+Pump P118,Plant 1,2024-10-27,Alan Fernandes,failure,Pump P118 failure. Root symptom chain observed: Pressure Spike -> Valve Sticking -> Overpressure Trip -> Line Shutdown. Failure Code: FC-8527. Part implicated: Bearing B21.,33.1,FC-8527,maintenance_log_P118.txt
+Pump P118,Plant 1,2025-06-29,Ravi Shah,inspection,Routine inspection of Pump P118. Visual and vibration checks within normal range.,0.0,,maintenance_log_P118.txt
+Pump P118,Plant 1,2025-07-03,Alan Fernandes,inspection,Routine inspection of Pump P118. Visual and vibration checks within normal range.,0.0,,maintenance_log_P118.txt
+Pump P118,Plant 1,2025-08-11,Ravi Shah,repair,Repaired Gasket G5 on Pump P118 after routine inspection flagged wear.,0.0,,maintenance_log_P118.txt
+Pump P118,Plant 1,2026-01-29,Kavita Rao,inspection,Routine inspection of Pump P118. Visual and vibration checks within normal range.,0.0,,maintenance_log_P118.txt
+Pump P118,Plant 1,2026-03-15,Alan Fernandes,failure,Pump P118 failure. Root symptom chain observed: High Temperature -> Bearing Wear -> Oil Leakage -> Pump Shutdown. Failure Code: FC-3615. Part implicated: Gasket G5.,31.3,FC-3615,maintenance_log_P118.txt
+Compressor C305,Plant 2,2025-01-02,Alan Fernandes,inspection,Routine inspection of Compressor C305. Visual and vibration checks within normal range.,0.0,,maintenance_log_C305.txt
+Compressor C305,Plant 2,2025-04-30,Kavita Rao,repair,Repaired Belt B8 on Compressor C305 after routine inspection flagged wear.,0.0,,maintenance_log_C305.txt
+Compressor C305,Plant 2,2026-03-03,Priya Menon,repair,Repaired Filter F60 on Compressor C305 after routine inspection flagged wear.,0.0,,maintenance_log_C305.txt
+Compressor C305,Plant 2,2026-04-04,Priya Menon,repair,Repaired Filter F60 on Compressor C305 after routine inspection flagged wear.,0.0,,maintenance_log_C305.txt
+Compressor C305,Plant 2,2026-05-28,Priya Menon,failure,Compressor C305 failure. Root symptom chain observed: High Temperature -> Bearing Wear -> Oil Leakage -> Pump Shutdown. Failure Code: FC-2654. Part implicated: Belt B8.,34.8,FC-2654,maintenance_log_C305.txt
+Compressor C305,Plant 2,2026-06-06,Alan Fernandes,repair,Repaired Filter F60 on Compressor C305 after routine inspection flagged wear.,0.0,,maintenance_log_C305.txt
+Motor M410,Plant 1,2024-08-21,Alan Fernandes,inspection,Routine inspection of Motor M410. Visual and vibration checks within normal range.,0.0,,maintenance_log_M410.txt
+Motor M410,Plant 1,2024-09-25,Priya Menon,replacement,Replaced Coupling C3 on Motor M410 as preventive maintenance.,0.0,,maintenance_log_M410.txt
+Motor M410,Plant 1,2025-01-03,Kavita Rao,inspection,Routine inspection of Motor M410. Visual and vibration checks within normal range.,0.0,,maintenance_log_M410.txt
+Motor M410,Plant 1,2025-02-22,Kavita Rao,inspection,Routine inspection of Motor M410. Visual and vibration checks within normal range.,0.0,,maintenance_log_M410.txt
+Motor M410,Plant 1,2025-06-17,Ravi Shah,inspection,Routine inspection of Motor M410. Visual and vibration checks within normal range.,0.0,,maintenance_log_M410.txt
+Motor M410,Plant 1,2026-05-06,Deepak Nair,inspection,Routine inspection of Motor M410. Visual and vibration checks within normal range.,0.0,,maintenance_log_M410.txt
+Valve V220,Plant 3,2024-10-21,Ravi Shah,failure,Valve V220 failure. Root symptom chain observed: Excess Vibration -> Bearing Misalignment -> Seal Failure -> Unplanned Shutdown. Failure Code: FC-7916. Part implicated: Seal S22.,26.6,FC-7916,maintenance_log_V220.txt
+Valve V220,Plant 3,2024-12-09,Priya Menon,repair,Repaired Seal S22 on Valve V220 after routine inspection flagged wear.,0.0,,maintenance_log_V220.txt
+Valve V220,Plant 3,2025-08-18,Kavita Rao,repair,Repaired Seal S22 on Valve V220 after routine inspection flagged wear.,0.0,,maintenance_log_V220.txt
+Valve V220,Plant 3,2026-01-12,Alan Fernandes,replacement,Replaced Seal S22 on Valve V220 as preventive maintenance.,0.0,,maintenance_log_V220.txt
+Valve V220,Plant 3,2026-03-10,Kavita Rao,failure,Valve V220 failure. Root symptom chain observed: Belt Slippage -> Belt Wear -> Motor Overload -> Conveyor Stoppage. Failure Code: FC-3266. Part implicated: Seal S22.,17.0,FC-3266,maintenance_log_V220.txt
+Valve V220,Plant 3,2026-05-09,Kavita Rao,inspection,Routine inspection of Valve V220. Visual and vibration checks within normal range.,0.0,,maintenance_log_V220.txt
+Boiler B501,Plant 2,2025-10-08,Priya Menon,repair,Repaired Gasket G14 on Boiler B501 after routine inspection flagged wear.,0.0,,maintenance_log_B501.txt
+Boiler B501,Plant 2,2025-12-14,Priya Menon,repair,Repaired Gasket G14 on Boiler B501 after routine inspection flagged wear.,0.0,,maintenance_log_B501.txt
+Boiler B501,Plant 2,2026-03-25,Alan Fernandes,repair,Repaired Gasket G14 on Boiler B501 after routine inspection flagged wear.,0.0,,maintenance_log_B501.txt
+Boiler B501,Plant 2,2026-04-21,Alan Fernandes,failure,Boiler B501 failure. Root symptom chain observed: Excess Vibration -> Bearing Misalignment -> Seal Failure -> Unplanned Shutdown. Failure Code: FC-3646. Part implicated: Gasket G14.,9.5,FC-3646,maintenance_log_B501.txt
+Boiler B501,Plant 2,2026-05-07,Alan Fernandes,inspection,Routine inspection of Boiler B501. Visual and vibration checks within normal range.,0.0,,maintenance_log_B501.txt
+Boiler B501,Plant 2,2026-06-16,Ravi Shah,repair,Repaired Gasket G14 on Boiler B501 after routine inspection flagged wear.,0.0,,maintenance_log_B501.txt
+Conveyor C602,Plant 1,2024-11-28,Kavita Rao,replacement,Replaced Belt B21 on Conveyor C602 as preventive maintenance.,0.0,,maintenance_log_C602.txt
+Conveyor C602,Plant 1,2025-03-23,Deepak Nair,replacement,Replaced Belt B21 on Conveyor C602 as preventive maintenance.,0.0,,maintenance_log_C602.txt
+Conveyor C602,Plant 1,2025-04-17,Deepak Nair,failure,Conveyor C602 failure. Root symptom chain observed: Belt Slippage -> Belt Wear -> Motor Overload -> Conveyor Stoppage. Failure Code: FC-9835. Part implicated: Belt B21.,38.7,FC-9835,maintenance_log_C602.txt
+Conveyor C602,Plant 1,2025-07-26,Alan Fernandes,inspection,Routine inspection of Conveyor C602. Visual and vibration checks within normal range.,0.0,,maintenance_log_C602.txt
+Conveyor C602,Plant 1,2025-11-29,Ravi Shah,replacement,Replaced Belt B21 on Conveyor C602 as preventive maintenance.,0.0,,maintenance_log_C602.txt
+Conveyor C602,Plant 1,2026-07-20,Alan Fernandes,inspection,Routine inspection of Conveyor C602. Visual and vibration checks within normal range.,0.0,,maintenance_log_C602.txt
+Turbine T710,Plant 3,2025-03-02,Ravi Shah,inspection,Routine inspection of Turbine T710. Visual and vibration checks within normal range.,0.0,,maintenance_log_T710.txt
+Turbine T710,Plant 3,2025-03-07,Ravi Shah,inspection,Routine inspection of Turbine T710. Visual and vibration checks within normal range.,0.0,,maintenance_log_T710.txt
+Turbine T710,Plant 3,2025-12-31,Kavita Rao,inspection,Routine inspection of Turbine T710. Visual and vibration checks within normal range.,0.0,,maintenance_log_T710.txt
+Turbine T710,Plant 3,2026-03-14,Deepak Nair,inspection,Routine inspection of Turbine T710. Visual and vibration checks within normal range.,0.0,,maintenance_log_T710.txt
+Turbine T710,Plant 3,2026-04-27,Ravi Shah,inspection,Routine inspection of Turbine T710. Visual and vibration checks within normal range.,0.0,,maintenance_log_T710.txt
+Turbine T710,Plant 3,2026-06-07,Alan Fernandes,inspection,Routine inspection of Turbine T710. Visual and vibration checks within normal range.,0.0,,maintenance_log_T710.txt

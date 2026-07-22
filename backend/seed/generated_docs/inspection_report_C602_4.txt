@@ -1,0 +1,9 @@
+INSPECTION REPORT
+Equipment: Conveyor C602
+Plant: Plant 1
+Inspection Date: 2025-12-09
+Inspected by: Priya Menon
+Applicable Standard: API 610
+
+Findings: Equipment inspected for wear on Bearing B33. PPE requirement confirmed for personnel in the area.
+All certifications current.

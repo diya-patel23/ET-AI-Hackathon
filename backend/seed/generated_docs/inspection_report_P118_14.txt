@@ -1,0 +1,10 @@
+INSPECTION REPORT
+Equipment: Pump P118
+Plant: Plant 1
+Inspection Date: 2025-11-06
+Inspected by: Deepak Nair
+Applicable Standard: ISO 55001
+
+Findings: Equipment inspected for wear on Bearing B21. 
+All certifications current.
+Pressure reading: 51 psi within acceptable range.

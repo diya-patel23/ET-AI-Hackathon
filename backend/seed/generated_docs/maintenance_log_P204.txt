@@ -1,0 +1,40 @@
+MAINTENANCE LOG
+Equipment: Pump P204
+Plant: Plant 3
+Department: Maintenance
+
+Date: 2024-11-01
+Engineer: Deepak Nair
+Event Type: inspection
+Description: Routine inspection of Pump P204. Visual and vibration checks within normal range.
+Downtime (hours): 0.0
+
+Date: 2025-02-28
+Engineer: Priya Menon
+Event Type: repair
+Description: Repaired Bearing B42 on Pump P204 after routine inspection flagged wear.
+Downtime (hours): 0.0
+
+Date: 2025-04-27
+Engineer: Priya Menon
+Event Type: inspection
+Description: Routine inspection of Pump P204. Visual and vibration checks within normal range.
+Downtime (hours): 0.0
+
+Date: 2025-09-25
+Engineer: Ravi Shah
+Event Type: inspection
+Description: Routine inspection of Pump P204. Visual and vibration checks within normal range.
+Downtime (hours): 0.0
+
+Date: 2026-02-14
+Engineer: Priya Menon
+Event Type: repair
+Description: Repaired Impeller I9 on Pump P204 after routine inspection flagged wear.
+Downtime (hours): 0.0
+
+Date: 2026-05-05
+Engineer: Ravi Shah
+Event Type: inspection
+Description: Routine inspection of Pump P204. Visual and vibration checks within normal range.
+Downtime (hours): 0.0

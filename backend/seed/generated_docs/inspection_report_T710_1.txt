@@ -1,0 +1,9 @@
+INSPECTION REPORT
+Equipment: Turbine T710
+Plant: Plant 3
+Inspection Date: 2026-03-19
+Inspected by: Priya Menon
+Applicable Standard: API 610
+
+Findings: Equipment inspected for wear on Bearing B45. 
+NOTE: certification expired for this asset, renewal required.

@@ -1,0 +1,40 @@
+MAINTENANCE LOG
+Equipment: Pump P118
+Plant: Plant 1
+Department: Maintenance
+
+Date: 2024-10-27
+Engineer: Alan Fernandes
+Event Type: failure
+Description: Pump P118 failure. Root symptom chain observed: Pressure Spike -> Valve Sticking -> Overpressure Trip -> Line Shutdown. Failure Code: FC-8527. Part implicated: Bearing B21.
+Downtime (hours): 33.1
+
+Date: 2025-06-29
+Engineer: Ravi Shah
+Event Type: inspection
+Description: Routine inspection of Pump P118. Visual and vibration checks within normal range.
+Downtime (hours): 0.0
+
+Date: 2025-07-03
+Engineer: Alan Fernandes
+Event Type: inspection
+Description: Routine inspection of Pump P118. Visual and vibration checks within normal range.
+Downtime (hours): 0.0
+
+Date: 2025-08-11
+Engineer: Ravi Shah
+Event Type: repair
+Description: Repaired Gasket G5 on Pump P118 after routine inspection flagged wear.
+Downtime (hours): 0.0
+
+Date: 2026-01-29
+Engineer: Kavita Rao
+Event Type: inspection
+Description: Routine inspection of Pump P118. Visual and vibration checks within normal range.
+Downtime (hours): 0.0
+
+Date: 2026-03-15
+Engineer: Alan Fernandes
+Event Type: failure
+Description: Pump P118 failure. Root symptom chain observed: High Temperature -> Bearing Wear -> Oil Leakage -> Pump Shutdown. Failure Code: FC-3615. Part implicated: Gasket G5.
+Downtime (hours): 31.3

@@ -1,0 +1,10 @@
+INSPECTION REPORT
+Equipment: Pump P204
+Plant: Plant 3
+Inspection Date: 2025-08-25
+Inspected by: Alan Fernandes
+Applicable Standard: OSHA 1910.169
+
+Findings: Equipment inspected for wear on Impeller I9. PPE requirement confirmed for personnel in the area.
+All certifications current.
+Pressure reading: 36 psi within acceptable range.

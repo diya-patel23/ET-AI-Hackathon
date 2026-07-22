@@ -1,0 +1,9 @@
+INSPECTION REPORT
+Equipment: Conveyor C602
+Plant: Plant 1
+Inspection Date: 2026-02-04
+Inspected by: Ravi Shah
+Applicable Standard: ISO 55001
+
+Findings: Equipment inspected for wear on Bearing B33. PPE requirement confirmed for personnel in the area.
+All certifications current.

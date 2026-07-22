@@ -1,0 +1,15 @@
+SAFETY MANUAL EXCERPT — GENERAL PLANT SAFETY
+Plant: Plant 1
+Department: Safety
+
+Section 4: Personal Protective Equipment (PPE)
+All personnel working near rotating equipment (Pumps, Compressors, Motors, Turbines) must wear
+PPE including hearing protection, safety glasses, and steel-toe footwear, per OSHA 1910.132.
+
+Section 7: Pressure Vessel Safety
+Boilers and Compressors operating above 60 psi require inspection every 12 months per OSHA 1910.169.
+Any pressure reading exceeding rated limits must trigger immediate shutdown procedures.
+
+Section 9: Bearing and Rotating Equipment Standards
+All bearings (see Bearing B42, B21, B12, B33, B45) should be inspected under API 610 guidelines.
+Bearings exceeding 900 operating hours without inspection are considered high risk.

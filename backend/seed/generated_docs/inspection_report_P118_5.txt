@@ -1,0 +1,10 @@
+INSPECTION REPORT
+Equipment: Pump P118
+Plant: Plant 1
+Inspection Date: 2026-06-18
+Inspected by: Ravi Shah
+Applicable Standard: OSHA 1910.132
+
+Findings: Equipment inspected for wear on Bearing B21. PPE requirement confirmed for personnel in the area.
+All certifications current.
+Pressure reading: 41 psi within acceptable range.

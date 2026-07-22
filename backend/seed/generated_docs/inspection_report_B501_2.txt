@@ -1,0 +1,10 @@
+INSPECTION REPORT
+Equipment: Boiler B501
+Plant: Plant 2
+Inspection Date: 2026-02-15
+Inspected by: Kavita Rao
+Applicable Standard: API 610
+
+Findings: Equipment inspected for wear on Gasket G14. PPE requirement confirmed for personnel in the area.
+NOTE: certification expired for this asset, renewal required.
+Pressure reading: 27 psi within acceptable range.

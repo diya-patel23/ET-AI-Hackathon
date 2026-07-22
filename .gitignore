@@ -1,0 +1,22 @@
+# Environment variables
+.env
+*.env
+
+# Python
+__pycache__/
+*.pyc
+venv/
+.venv/
+
+# Node.js
+node_modules/
+
+# Local databases and generated data
+chroma/
+documents/
+*.db
+
+# Build files
+.next/
+dist/
+build/

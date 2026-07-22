@@ -1,0 +1,10 @@
+INSPECTION REPORT
+Equipment: Pump P204
+Plant: Plant 3
+Inspection Date: 2025-08-30
+Inspected by: Deepak Nair
+Applicable Standard: OSHA 1910.169
+
+Findings: Equipment inspected for wear on Bearing B42. 
+NOTE: certification expired for this asset, renewal required.
+Pressure reading: 71 psi within acceptable range.

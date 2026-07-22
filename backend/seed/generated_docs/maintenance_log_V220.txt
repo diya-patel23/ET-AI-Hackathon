@@ -1,0 +1,40 @@
+MAINTENANCE LOG
+Equipment: Valve V220
+Plant: Plant 3
+Department: Maintenance
+
+Date: 2024-10-21
+Engineer: Ravi Shah
+Event Type: failure
+Description: Valve V220 failure. Root symptom chain observed: Excess Vibration -> Bearing Misalignment -> Seal Failure -> Unplanned Shutdown. Failure Code: FC-7916. Part implicated: Seal S22.
+Downtime (hours): 26.6
+
+Date: 2024-12-09
+Engineer: Priya Menon
+Event Type: repair
+Description: Repaired Seal S22 on Valve V220 after routine inspection flagged wear.
+Downtime (hours): 0.0
+
+Date: 2025-08-18
+Engineer: Kavita Rao
+Event Type: repair
+Description: Repaired Seal S22 on Valve V220 after routine inspection flagged wear.
+Downtime (hours): 0.0
+
+Date: 2026-01-12
+Engineer: Alan Fernandes
+Event Type: replacement
+Description: Replaced Seal S22 on Valve V220 as preventive maintenance.
+Downtime (hours): 0.0
+
+Date: 2026-03-10
+Engineer: Kavita Rao
+Event Type: failure
+Description: Valve V220 failure. Root symptom chain observed: Belt Slippage -> Belt Wear -> Motor Overload -> Conveyor Stoppage. Failure Code: FC-3266. Part implicated: Seal S22.
+Downtime (hours): 17.0
+
+Date: 2026-05-09
+Engineer: Kavita Rao
+Event Type: inspection
+Description: Routine inspection of Valve V220. Visual and vibration checks within normal range.
+Downtime (hours): 0.0

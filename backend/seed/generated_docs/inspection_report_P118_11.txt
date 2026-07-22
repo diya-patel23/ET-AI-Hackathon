@@ -1,0 +1,10 @@
+INSPECTION REPORT
+Equipment: Pump P118
+Plant: Plant 1
+Inspection Date: 2025-11-23
+Inspected by: Deepak Nair
+Applicable Standard: OSHA 1910.132
+
+Findings: Equipment inspected for wear on Gasket G5. PPE requirement confirmed for personnel in the area.
+All certifications current.
+Pressure reading: 53 psi within acceptable range.
