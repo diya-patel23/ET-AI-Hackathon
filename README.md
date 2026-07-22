@@ -40,7 +40,7 @@ source venv/bin/activate          # Windows: venv\Scripts\activate
 pip install -r requirements.txt
 
 cp .env.example .env
-# Optionally edit .env and add ANTHROPIC_API_KEY — see section 4.
+# Optionally edit .env and add LLAMA_API_KEY — see section 4.
 
 # Generates ~25 synthetic documents (maintenance logs, inspection reports,
 # safety/OEM manual excerpts) around a recurring set of 8 equipment items,
@@ -92,12 +92,11 @@ To turn it on:
 
 ```bash
 # backend/.env
-ANTHROPIC_API_KEY=sk-ant-...
+LLAMA_API_KEY=sk-ant-...
 ```
 
 Restart the backend. Re-run `python -m seed.run_seed` if you want the LLM
-entity-enrichment pass applied retroactively to the seeded documents too
-(optional — the regex-based extraction already populated a real graph).
+entity-enrichment pass applied retroactively to the seeded documents too.
 
 ## 5. Uploading your own documents
 
