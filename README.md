@@ -16,13 +16,12 @@ Industrial knowledge platform for maintenance, inspection, and safety documents.
   * Maintenance Intelligence
   * Compliance Checker
 
-## Demo Pages
+## Features
 
-* `/` Dashboard
-* `/copilot` RAG chat
-* `/documents` Upload & browse
-* `/graph` Knowledge graph explorer
-* `/agents` RCA / Maintenance / Compliance
+* RAG chat
+* Upload & browse documents
+* Knowledge graph explorer
+* RCA / Maintenance / Compliance
 
 ## Uploading Your Own Documents
 
